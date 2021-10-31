@@ -10,21 +10,27 @@
 </head>
 <body>
     <div id="content" class="text-center c-w">
-        <h2  id="clock">00:00:00</h2>
+        <h2  id="title" class="c-w"></h2>
         <form id="login-form" class="hidden " >
             <input required maxlength="15" type="text" placeholder="이름을 입력해 주세요" />
             <input type="submit" value="Log In">
         </form>
         <h1 id="greeting" class="hidden"></h1>
-        <form id="todo-form">
-            <input type="text" placeholder="할 일을 입력해 주세요" />
-        </form>
-        <ul id="todo-list"></ul>
+        <div id="todo-bg">
+            <form id="todo-form">
+                <input type="text" placeholder="할 일을 입력해 주세요" />
+                <input type="submit" value="등록">
+            </form>
+            <ol id="todo-list">
+            </ol>
+        </div>
+
         <div id="quote">
             <span></span>
             <span></span>
         </div>
     </div>
+    <h2  id="clock" class="c-w">00:00:00</h2>
     <div id="weather" class="c-w">
         <span></span>
         <span></span>
